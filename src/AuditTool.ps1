@@ -11,7 +11,8 @@ function Read-Required($Prompt) {
 }
 
 Clear-Host
-Write-Host '========================================='nWrite-Host '          MSTAR PC AUDIT TOOL'
+Write-Host '========================================='
+Write-Host '          MSTAR PC AUDIT TOOL'
 Write-Host '========================================='
 Write-Host ''
 
@@ -28,7 +29,7 @@ try {
     $customer = $validation.data.customer
     $branch = $validation.data.branch
 
-    Write-Host "Cong ty : $($customer.name)"
+    Write-Host "Cong ty  : $($customer.name)"
     Write-Host "Chi nhanh: $($branch.name)"
     Write-Host ''
     $confirm = Read-Host 'Thong tin dung? Tiep tuc (Y/N)'
